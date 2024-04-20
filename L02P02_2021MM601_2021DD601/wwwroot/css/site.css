@@ -20,3 +20,30 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.bg-custom {
+    background-color: #22252C;
+}
+
+.footer {
+    text-align: center;
+    background-color: #22252C;
+    padding: 10px 0;
+    line-height: 15px!important;
+}
+
+.colortexto {
+    color: #ffffff;
+}
+
+.container-fluid {
+    display: block!important;
+}
+
+.espacio {
+    margin-top: 25px;
+}
+
+.espacio2 {
+    margin-bottom: 30px;
+}
