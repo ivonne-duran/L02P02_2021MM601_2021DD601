@@ -35,12 +35,23 @@
             @RenderBody()
         </main>
     </div>
+    <style>
+        .footer {
+            text-align: center;
+            background-color: #22252C;
+            padding: 20px 0;
+        }
+
+        .colortexto {
+            color: #ffffff;
+        }
+    </style>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - L02P02_2021MM601_2021DD601 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+        <p class="colortexto" >2021DD601 - Ivonne Esmeralda Durán Díaz - <a asp-area="" asp-controller="Home"></a></p>
+        <p class="colortexto" >2021MM601 - Laura Lorena Medina Montero - <a asp-area="" asp-controller="Home"></a></p>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
