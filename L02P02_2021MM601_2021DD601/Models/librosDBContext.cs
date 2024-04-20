@@ -6,6 +6,8 @@ namespace L02P02_2021MM601_2021DD601.Models
     {
         public librosDBContext(DbContextOptions options) : base (options) { }
 
+        public DbSet<Autores> autores { get; set; }
+        public DbSet<Libros> libros { get; set; }
     }
 
 }

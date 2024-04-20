@@ -1,0 +1,50 @@
+﻿@model IEnumerable<L02P02_2021MM601_2021DD601.Models.Libros>
+
+@{
+    ViewData["Title"] = "Libros";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3"><h1>Autor: </h1></div>
+        <div class="col text-start"><h2 class="text-start">Ivonne</h2></div>
+    </div>
+</div>
+ 
+
+<hr />
+
+<h1>Seleccione el libro del autor </h1>
+
+<table class="table">
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.url_imagen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_autor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_categoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estado)
+            </td>
+            <td>
+                    <a class="btn btn-success" asp-action="Edit" asp-route-id="@item.id">Seleccionar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

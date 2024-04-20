@@ -1,0 +1,22 @@
+﻿@model IEnumerable<L02P02_2021MM601_2021DD601.Models.Autores>
+
+@{
+    ViewData["Title"] = "Autor";
+}
+
+<h1>Autor</h1>
+
+<table class="table table-bordered">
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.autor)
+            </td>
+            <td class="text-end">
+                <a class="btn btn-success" asp-controller="Libros" asp-action="GetByAutor" asp-route-id="@item.id"> Seleccionar </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
