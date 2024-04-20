@@ -39,3 +39,11 @@ body {
 .container-fluid {
     display: block!important;
 }
+
+.espacio {
+    margin-top: 25px;
+}
+
+.espacio2 {
+    margin-bottom: 30px;
+}
