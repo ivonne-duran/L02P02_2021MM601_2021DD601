@@ -10,46 +10,35 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">L02P02_2021MM601_2021DD601</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-custom border-bottom box-shadow mb-3">
+            <div class="container-fluid justify-content-center">
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="~/img/logoUnicaes.png" style="max-width: 100px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="colortexto">Comentarios Por Libros</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">                  
+                        <h6 style="color: darkgray">Seleccione el autor -> Seleccione el libro -> Se muestra los comentarios existentes -> Adicione un número nuevo</h6>
+                    </div>
                 </div>
             </div>
         </nav>
+
     </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-    <style>
-        .footer {
-            text-align: center;
-            background-color: #22252C;
-            padding: 20px 0;
-        }
-
-        .colortexto {
-            color: #ffffff;
-        }
-    </style>
-
-    <footer class="border-top footer text-muted">
-        <p class="colortexto" >2021DD601 - Ivonne Esmeralda Durán Díaz - <a asp-area="" asp-controller="Home"></a></p>
-        <p class="colortexto" >2021MM601 - Laura Lorena Medina Montero - <a asp-area="" asp-controller="Home"></a></p>
+    <footer class=" footer text-center">
+        <h6 style="color: darkgray">2021-DD-601 - IVONNE ESMARALDA DURÁN DÍAZ</h6>
+        <h6 style="color: darkgray">2021-MM-601 - LAURA LORENA MEDINA MONTERO</h6>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
