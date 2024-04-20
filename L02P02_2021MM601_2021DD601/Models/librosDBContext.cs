@@ -9,4 +9,5 @@ namespace L02P02_2021MM601_2021DD601.Models
         public DbSet<Autores> autores { get; set; }
         public DbSet<Libros> libros { get; set; }
     }
+
 }
