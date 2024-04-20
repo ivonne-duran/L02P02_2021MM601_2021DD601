@@ -7,14 +7,6 @@
 <h1>Autor</h1>
 
 <table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.autor)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
@@ -22,7 +14,7 @@
                 @Html.DisplayFor(modelItem => item.autor)
             </td>
             <td class="text-end">
-                <a asp-controller="Libros" asp-action="GetByAutor" asp-route-id="@item.id"> Seleccionar </a>
+                <a class="btn btn-success" asp-controller="Libros" asp-action="GetByAutor" asp-route-id="@item.id"> Seleccionar </a>
             </td>
         </tr>
 }
