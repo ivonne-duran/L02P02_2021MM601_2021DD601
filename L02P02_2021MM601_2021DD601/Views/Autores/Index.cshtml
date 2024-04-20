@@ -22,7 +22,7 @@
                 @Html.DisplayFor(modelItem => item.autor)
             </td>
             <td class="text-end">
-                <button type="button" class="btn btn-success">Seleccionar</button>
+                <a asp-controller="Libros" asp-action="GetByAutor" asp-route-id="@item.id"> Seleccionar </a>
             </td>
         </tr>
 }
