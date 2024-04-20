@@ -1,0 +1,30 @@
+﻿@model IEnumerable<L02P02_2021MM601_2021DD601.Models.Autores>
+
+@{
+    ViewData["Title"] = "Autor";
+}
+
+<h1>Autor</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.autor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.autor)
+            </td>
+            <td class="text-end">
+                <button type="button" class="btn btn-success">Seleccionar</button>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
